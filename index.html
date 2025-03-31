@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monster Survivors - Thrilling Online Monster Battle Game</title>
-    <meta name="description" content="Play Monster Survivors online - an action-packed survival game where you battle endless waves of monsters with unique characters and abilities.">
+    <title>怪物生存者 - 刺激的在线怪物战斗游戏</title>
+    <meta name="description" content="在线玩怪物生存者 - 一款充满动作的生存游戏，你将与独特角色和能力对抗无尽的怪物浪潮。">
     <link rel="canonical" href="https://monstersurvivors.com">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -32,6 +32,10 @@
                 -webkit-text-fill-color: transparent;
             }
         }
+        
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
     </style>
 </head>
 <body class="bg-apple-gray text-apple-text">
@@ -39,15 +43,45 @@
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <div class="text-center md:text-left mb-4 md:mb-0">
                 <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gradient bg-gradient-to-r from-purple-500 via-pink-500 to-red-500">
-                    Monster Survivors
+                    怪物生存者
                 </h1>
             </div>
+            
+            <!-- 搜索框 -->
+            <div class="w-full md:w-auto mb-4 md:mb-0 md:mx-4">
+                <form class="flex">
+                    <input type="text" placeholder="搜索游戏..." class="px-4 py-2 rounded-l-md w-full focus:outline-none text-apple-text" />
+                    <button type="submit" class="bg-apple-blue hover:bg-apple-darkblue px-4 py-2 rounded-r-md transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            
             <nav>
-                <ul class="flex space-x-4 md:space-x-8">
-                    <li><a href="#play" class="hover:text-apple-blue transition-colors">Play Now</a></li>
-                    <li><a href="#about" class="hover:text-apple-blue transition-colors">About</a></li>
-                    <li><a href="#features" class="hover:text-apple-blue transition-colors">Features</a></li>
-                    <li><a href="#tips" class="hover:text-apple-blue transition-colors">Tips</a></li>
+                <ul class="flex flex-wrap justify-center space-x-2 md:space-x-6">
+                    <li><a href="#play" class="hover:text-apple-blue transition-colors">立即游戏</a></li>
+                    <li><a href="#about" class="hover:text-apple-blue transition-colors">游戏介绍</a></li>
+                    <li><a href="#features" class="hover:text-apple-blue transition-colors">游戏特色</a></li>
+                    <li><a href="#tips" class="hover:text-apple-blue transition-colors">游戏技巧</a></li>
+                    
+                    <!-- 游戏分类下拉菜单 -->
+                    <li class="dropdown relative">
+                        <a href="#" class="hover:text-apple-blue transition-colors flex items-center">
+                            游戏分类
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu absolute hidden bg-black mt-2 py-2 rounded-md shadow-lg z-10 w-32">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-800 transition-colors">动作游戏</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-800 transition-colors">射击游戏</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-800 transition-colors">益智游戏</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-800 transition-colors">策略游戏</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-800 transition-colors">体育游戏</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -56,68 +90,68 @@
     <main class="container mx-auto px-4 py-8">
         <section class="mb-12 text-center">
             <p class="text-xl md:text-2xl mb-6 max-w-3xl mx-auto">
-                Survive endless waves of monsters in this action-packed roguelike game where your choices determine your survival.
+                在这款充满动作的roguelike游戏中，你将面对无尽的怪物浪潮，你的选择决定你的生存。
             </p>
             
             <div id="play" class="bg-white rounded-xl shadow-xl p-4 md:p-6 max-w-5xl mx-auto">
-                <h2 class="text-2xl md:text-3xl font-bold mb-4 text-center">Play Monster Survivors Online</h2>
+                <h2 class="text-2xl md:text-3xl font-bold mb-4 text-center">在线玩怪物生存者</h2>
                 <div class="relative w-full overflow-hidden" style="padding-top: 56.25%">
                     <iframe 
                         src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" 
                         class="absolute top-0 left-0 w-full h-full border-0"
                         allowfullscreen
-                        title="Monster Survivors Online Game"
+                        title="怪物生存者在线游戏"
                     ></iframe>
                 </div>
             </div>
         </section>
 
         <section id="about" class="mb-12 bg-white rounded-xl shadow-xl p-6 md:p-8">
-            <h2 class="text-2xl md:text-3xl font-bold mb-4 border-b border-gray-200 pb-2">About Monster Survivors</h2>
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 border-b border-gray-200 pb-2">关于怪物生存者</h2>
             <div class="space-y-4">
                 <p>
-                    Monster Survivors is an addictive roguelike survival game where you face waves of increasingly difficult monsters. Choose your character, level up unique abilities, and see how long you can survive against the monster hordes.
+                    怪物生存者是一款令人上瘾的roguelike生存游戏，你将面对越来越难的怪物浪潮。选择你的角色，提升独特能力，看看你能在怪物群中生存多久。
                 </p>
                 <p>
-                    With its pixel-perfect art style and engaging gameplay mechanics, Monster Survivors offers a challenging experience that will keep you coming back for "just one more run."
+                    凭借其像素完美的艺术风格和引人入胜的游戏机制，怪物生存者提供了一个具有挑战性的体验，让你总想"再来一局"。
                 </p>
                 <p>
-                    The game features procedurally generated levels, ensuring that no two playthroughs are ever exactly the same. Adapt your strategy on the fly as you encounter different monster types and collect powerful upgrades.
+                    游戏特点是程序生成的关卡，确保没有两次游戏体验完全相同。在遇到不同类型的怪物和收集强大升级时，随时调整你的策略。
                 </p>
             </div>
         </section>
 
         <section id="features" class="mb-12 bg-white rounded-xl shadow-xl p-6 md:p-8">
-            <h2 class="text-2xl md:text-3xl font-bold mb-4 border-b border-gray-200 pb-2">Game Features</h2>
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 border-b border-gray-200 pb-2">游戏特色</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                 <div class="bg-apple-gray rounded-lg p-4">
-                    <h3 class="text-xl font-semibold mb-2">Multiple Characters</h3>
-                    <p>Choose from various characters, each with unique abilities and playstyles.</p>
+                    <h3 class="text-xl font-semibold mb-2">多样角色</h3>
+                    <p>选择各种角色，每个角色都具有独特的能力和游戏风格。</p>
                 </div>
                 <div class="bg-apple-gray rounded-lg p-4">
-                    <h3 class="text-xl font-semibold mb-2">Weapon Evolution</h3>
-                    <p>Combine weapons and items to create powerful evolved versions with special effects.</p>
+                    <h3 class="text-xl font-semibold mb-2">武器进化</h3>
+                    <p>组合武器和物品，创造具有特殊效果的强大进化版本。</p>
                 </div>
                 <div class="bg-apple-gray rounded-lg p-4">
-                    <h3 class="text-xl font-semibold mb-2">Roguelike Elements</h3>
-                    <p>Every run is different with random map generation and item drops.</p>
+                    <h3 class="text-xl font-semibold mb-2">Roguelike元素</h3>
+                    <p>每次游戏都不同，随机地图生成和物品掉落。</p>
                 </div>
                 <div class="bg-apple-gray rounded-lg p-4">
-                    <h3 class="text-xl font-semibold mb-2">Progression System</h3>
-                    <p>Level up during runs and unlock permanent upgrades for future attempts.</p>
+                    <h3 class="text-xl font-semibold mb-2">进阶系统</h3>
+                    <p>在游戏中升级，并为未来的尝试解锁永久性升级。</p>
                 </div>
             </div>
         </section>
 
         <section id="tips" class="mb-12 bg-white rounded-xl shadow-xl p-6 md:p-8">
-            <h2 class="text-2xl md:text-3xl font-bold mb-4 border-b border-gray-200 pb-2">Survival Tips</h2>
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 border-b border-gray-200 pb-2">生存技巧</h2>
             <ul class="list-disc list-inside space-y-3 mt-4">
-                <li>Focus on movement and positioning to avoid getting surrounded by monsters</li>
-                <li>Prioritize complementary weapons and upgrades that work well together</li>
-                <li>Don't ignore defensive items—they can make the difference in later waves</li>
-                <li>Try different characters to find one that matches your playstyle</li>
-                <li>Learn enemy patterns to better anticipate their movements</li>
-                <li>Collect experience gems quickly to stay ahead of the difficulty curve</li>
+                <li>专注于移动和定位，避免被怪物包围</li>
+                <li>优先选择相互补充的武器和升级</li>
+                <li>不要忽视防御类物品——它们在后期波次中可能成为关键</li>
+                <li>尝试不同的角色，找到适合你游戏风格的一个</li>
+                <li>学习敌人模式，更好地预测他们的行动</li>
+                <li>快速收集经验宝石，保持领先于难度曲线</li>
             </ul>
         </section>
     </main>
@@ -126,13 +160,13 @@
         <div class="container mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
-                    <p>&copy; 2023 Monster Survivors. All rights reserved.</p>
+                    <p>&copy; 2023 怪物生存者. 保留所有权利.</p>
                 </div>
                 <div>
                     <ul class="flex space-x-6">
-                        <li><a href="#" class="hover:text-apple-blue transition-colors">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-apple-blue transition-colors">Terms of Service</a></li>
-                        <li><a href="#" class="hover:text-apple-blue transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-apple-blue transition-colors">隐私政策</a></li>
+                        <li><a href="#" class="hover:text-apple-blue transition-colors">服务条款</a></li>
+                        <li><a href="#" class="hover:text-apple-blue transition-colors">联系我们</a></li>
                     </ul>
                 </div>
             </div>
