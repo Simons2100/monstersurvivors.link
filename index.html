@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Survivors - Thrilling Online Monster Battle Game</title>
+    <meta name="description" content="Play Monster Survivors online - an action-packed survival game where you battle endless waves of monsters with unique characters and abilities.">
+    <link rel="canonical" href="https://monstersurvivors.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            gray: '#f5f5f7',
+                            darkgray: '#86868b',
+                            blue: '#0071e3',
+                            darkblue: '#0077ED',
+                            text: '#1d1d1f'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-gradient {
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    </style>
+</head>
+<body class="bg-apple-gray text-apple-text">
+    <header class="w-full bg-black text-white py-4 px-4 md:px-8 shadow-md">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gradient bg-gradient-to-r from-purple-500 via-pink-500 to-red-500">
+                    Monster Survivors
+                </h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-4 md:space-x-8">
+                    <li><a href="#play" class="hover:text-apple-blue transition-colors">Play Now</a></li>
+                    <li><a href="#about" class="hover:text-apple-blue transition-colors">About</a></li>
+                    <li><a href="#features" class="hover:text-apple-blue transition-colors">Features</a></li>
+                    <li><a href="#tips" class="hover:text-apple-blue transition-colors">Tips</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12 text-center">
+            <p class="text-xl md:text-2xl mb-6 max-w-3xl mx-auto">
+                Survive endless waves of monsters in this action-packed roguelike game where your choices determine your survival.
+            </p>
+            
+            <div id="play" class="bg-white rounded-xl shadow-xl p-4 md:p-6 max-w-5xl mx-auto">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4 text-center">Play Monster Survivors Online</h2>
+                <div class="relative w-full overflow-hidden" style="padding-top: 56.25%">
+                    <iframe 
+                        src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" 
+                        class="absolute top-0 left-0 w-full h-full border-0"
+                        allowfullscreen
+                        title="Monster Survivors Online Game"
+                    ></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="mb-12 bg-white rounded-xl shadow-xl p-6 md:p-8">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 border-b border-gray-200 pb-2">About Monster Survivors</h2>
+            <div class="space-y-4">
+                <p>
+                    Monster Survivors is an addictive roguelike survival game where you face waves of increasingly difficult monsters. Choose your character, level up unique abilities, and see how long you can survive against the monster hordes.
+                </p>
+                <p>
+                    With its pixel-perfect art style and engaging gameplay mechanics, Monster Survivors offers a challenging experience that will keep you coming back for "just one more run."
+                </p>
+                <p>
+                    The game features procedurally generated levels, ensuring that no two playthroughs are ever exactly the same. Adapt your strategy on the fly as you encounter different monster types and collect powerful upgrades.
+                </p>
+            </div>
+        </section>
+
+        <section id="features" class="mb-12 bg-white rounded-xl shadow-xl p-6 md:p-8">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 border-b border-gray-200 pb-2">Game Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <div class="bg-apple-gray rounded-lg p-4">
+                    <h3 class="text-xl font-semibold mb-2">Multiple Characters</h3>
+                    <p>Choose from various characters, each with unique abilities and playstyles.</p>
+                </div>
+                <div class="bg-apple-gray rounded-lg p-4">
+                    <h3 class="text-xl font-semibold mb-2">Weapon Evolution</h3>
+                    <p>Combine weapons and items to create powerful evolved versions with special effects.</p>
+                </div>
+                <div class="bg-apple-gray rounded-lg p-4">
+                    <h3 class="text-xl font-semibold mb-2">Roguelike Elements</h3>
+                    <p>Every run is different with random map generation and item drops.</p>
+                </div>
+                <div class="bg-apple-gray rounded-lg p-4">
+                    <h3 class="text-xl font-semibold mb-2">Progression System</h3>
+                    <p>Level up during runs and unlock permanent upgrades for future attempts.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tips" class="mb-12 bg-white rounded-xl shadow-xl p-6 md:p-8">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 border-b border-gray-200 pb-2">Survival Tips</h2>
+            <ul class="list-disc list-inside space-y-3 mt-4">
+                <li>Focus on movement and positioning to avoid getting surrounded by monsters</li>
+                <li>Prioritize complementary weapons and upgrades that work well together</li>
+                <li>Don't ignore defensive items—they can make the difference in later waves</li>
+                <li>Try different characters to find one that matches your playstyle</li>
+                <li>Learn enemy patterns to better anticipate their movements</li>
+                <li>Collect experience gems quickly to stay ahead of the difficulty curve</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg-black text-white py-6 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2023 Monster Survivors. All rights reserved.</p>
+                </div>
+                <div>
+                    <ul class="flex space-x-6">
+                        <li><a href="#" class="hover:text-apple-blue transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-apple-blue transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-apple-blue transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
